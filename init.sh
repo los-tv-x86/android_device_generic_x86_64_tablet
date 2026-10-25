@@ -35,9 +35,7 @@ function init_misc()
 	[ $? -eq 0 ] && SDCARDFS_DISABLE=${SDCARDFS_DISABLE:-1}
 
 	# Allow force disable sdcardfs/esdfs
-	if [ "$SDCARDFS_DISABLE" -ge 1 ]; then
-		set_property external_storage.sdcardfs.enabled false
-	fi
+	set_property external_storage.sdcardfs.enabled false
 
 	# esdfs and FUSE passthrough are incompatible: passthrough opens the real
 	# backing file through the esdfs stack and MediaStore writes fail (ELOOP).
