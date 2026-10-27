@@ -5,7 +5,7 @@ CLANG_VER="${CLANG_VER:-clang-r584948b}"
 CLANG_BRANCH="${CLANG_BRANCH:-mirror-goog-llvm-r596125-release}"
 CLANG_TOOLS_BRANCH="${CLANG_TOOLS_BRANCH:-main-kernel-2026}"
 RUST_TOOL_VER="${RUST_TOOL_VER:-1.93.1}"
-RUST_TOOL_BRANCH="${RUST_TOOL_BRANCH:-main-kernel-2026}"
+RUST_TOOL_BRANCH="${RUST_TOOL_BRANCH:-refs/heads/android17-release}"
 
 # Target Directories
 CLANG_DIR="prebuilts/clang/host/linux-x86"
